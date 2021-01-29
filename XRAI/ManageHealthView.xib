@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ManageHealthUIView" customModule="XRAI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WmY-XO-NQ5" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="0.0" y="44" width="414" height="450"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="450" id="7cV-Sl-0Ul"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Manage your health online and get assistance on how to improve your health online with no human interaction." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATG-tY-iPl">
+                    <rect key="frame" x="0.0" y="594" width="414" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="U8g-sm-5cX"/>
+                    </constraints>
+                    <color key="textColor" red="0.08235294118" green="0.27450980390000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage your health" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsG-lV-2u4">
+                    <rect key="frame" x="0.0" y="494" width="414" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="HpQ-aQ-Scy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="32"/>
+                    <color key="textColor" red="0.08235294118" green="0.27450980390000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLx-lx-GAS" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="87" y="734" width="240" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="hOp-hv-Prp"/>
+                        <constraint firstAttribute="height" constant="128" id="qZR-7Z-bRd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="WmY-XO-NQ5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="67E-e8-Tc1"/>
+                <constraint firstItem="ATG-tY-iPl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Kbw-pR-Rd2"/>
+                <constraint firstItem="ATG-tY-iPl" firstAttribute="top" secondItem="xsG-lV-2u4" secondAttribute="bottom" id="OzS-zD-STo"/>
+                <constraint firstItem="xsG-lV-2u4" firstAttribute="top" secondItem="WmY-XO-NQ5" secondAttribute="bottom" id="P3X-cP-Iue"/>
+                <constraint firstItem="xsG-lV-2u4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="R9k-id-34w"/>
+                <constraint firstItem="xsG-lV-2u4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Tqh-rq-sgk"/>
+                <constraint firstItem="ATG-tY-iPl" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Zwz-n4-6uJ"/>
+                <constraint firstItem="WmY-XO-NQ5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hUK-pr-fsy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WmY-XO-NQ5" secondAttribute="trailing" id="iJi-zg-xan"/>
+                <constraint firstItem="gLx-lx-GAS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mpx-y3-P9k"/>
+                <constraint firstItem="gLx-lx-GAS" firstAttribute="top" secondItem="ATG-tY-iPl" secondAttribute="bottom" id="y1D-3k-ORd"/>
+            </constraints>
+            <connections>
+                <outlet property="myAnimation" destination="WmY-XO-NQ5" id="utL-X3-nnH"/>
+                <outlet property="swipeAnimation" destination="gLx-lx-GAS" id="DRm-f5-7SP"/>
+                <outlet property="textView" destination="ATG-tY-iPl" id="bcF-Iq-eh8"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="WmY-XO-NQ5"/>
+        <designable name="gLx-lx-GAS"/>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

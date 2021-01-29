@@ -6,14 +6,25 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+        let pageControl = UIPageControl.appearance()
+        
+        pageControl.currentPageIndicatorTintColor = UIColor(red: 0.082, green: 0.275, blue: 0.627, alpha: 1)
+        pageControl.pageIndicatorTintColor = .lightGray
+    
+        //pageControl.customPageControl(dotFillColor: .orange, dotBorderColor: .green, dotBorderWidth: 2)
+        
         return true
     }
 

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScheduleInfoUIView" customModule="XRAI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXV-71-qbd" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="0.0" y="44" width="414" height="445"/>
+                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="445" id="ihx-Zy-geu"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book / Schedule your appointment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQM-z8-dOr">
+                    <rect key="frame" x="0.0" y="489" width="414" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="0se-dA-ydS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="32"/>
+                    <color key="textColor" red="0.08235294118" green="0.27450980390000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaL-12-Rb8">
+                    <rect key="frame" x="0.0" y="609" width="414" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="2B5-G1-4Kw"/>
+                    </constraints>
+                    <string key="text">Don't have any more stress thanks to XR-AI which allows you to follow your health status thanks to our artificial intteligence technology. </string>
+                    <color key="textColor" red="0.08235294118" green="0.27450980390000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kQM-z8-dOr" firstAttribute="top" secondItem="ZXV-71-qbd" secondAttribute="bottom" id="0CL-qf-K7I"/>
+                <constraint firstItem="FaL-12-Rb8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7YR-B0-Bg1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZXV-71-qbd" secondAttribute="trailing" id="GeU-uJ-MAr"/>
+                <constraint firstItem="kQM-z8-dOr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="HuP-KB-C77"/>
+                <constraint firstItem="FaL-12-Rb8" firstAttribute="top" secondItem="kQM-z8-dOr" secondAttribute="bottom" constant="20" id="T5L-sr-zET"/>
+                <constraint firstItem="FaL-12-Rb8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="iIn-SG-XPA"/>
+                <constraint firstItem="ZXV-71-qbd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="imZ-3K-Dzx"/>
+                <constraint firstItem="kQM-z8-dOr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sUa-kn-Anh"/>
+                <constraint firstItem="ZXV-71-qbd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wcr-i6-U3T"/>
+            </constraints>
+            <connections>
+                <outlet property="myAnimation" destination="ZXV-71-qbd" id="Hju-zR-6Pr"/>
+                <outlet property="textView" destination="FaL-12-Rb8" id="Bmh-WM-dUr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="ZXV-71-qbd"/>
+    </designables>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -47,7 +47,9 @@
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>armv7</string>
+		<string>video-camera</string>
+		<string>camera-flash</string>
+		<string>still-camera</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
@@ -55,12 +57,22 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Manrope.ttf</string>
+		<string>Sura.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
+		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>XRAI needs you to allow access to your camera so you can analyse your desease</string>
+	<key>privacy</key>
+	<string></string>
 </dict>
 </plist>
