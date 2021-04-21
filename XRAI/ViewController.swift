@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import GoogleSignIn
 import SwiftUI
 
 
@@ -173,7 +174,16 @@ class ViewController: UIViewController {
         emailTextField.resignFirstResponder()
         passwordTextfield.resignFirstResponder()
     }
-
+    
+    @IBAction func signWithGoogle(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
+        
+        if let exist = Auth.auth().currentUser{
+            performSegue(withIdentifier: "goToHome", sender: self)
+        }
+    }
+    
 
 }
 
