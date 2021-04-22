@@ -323,7 +323,6 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate, UII
         performSegue(withIdentifier: "goToConfirm", sender: self)
         //let pixelBuffer = self.buffer(from: UIImage(data: imageData)!)!
         //let result = self.modelDataHandler?.runModel(onFrame: pixelBuffer)
-
         
         //print(result ?? "ah mince")
         

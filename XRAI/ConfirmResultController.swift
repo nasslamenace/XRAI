@@ -7,6 +7,8 @@
 
 import UIKit
 import SwiftUI
+import FirebaseDatabase
+import FirebaseAuth
 
 class ConfirmResultController: UIViewController {
 
@@ -88,16 +90,19 @@ class ConfirmResultController: UIViewController {
     
     @IBAction func confirm(_ sender: Any) {
         
-        showSpinner(onView: self.view)
         
+        
+        showSpinner(onView: self.view)
         let pixelBuffer = self.buffer(from: UIImage(data: imageData)!)!
         let result = self.modelDataHandler?.runModel(onFrame: pixelBuffer)
+        removeSpinner()
+
 
         
         print(result ?? "ah mince")
         
-        sleep(4)
-        removeSpinner()
+     
+        
         
         resultView.isHidden = false;
         
@@ -106,9 +111,19 @@ class ConfirmResultController: UIViewController {
         
         
         
-        resultLbl.text = "Your X-Ray has been tested positive at " + confidence.description + "% to pneumonia by our AI " 
+        resultLbl.text = "Your X-Ray has been tested positive at " + confidence.description + "% to pneumonia by our AI "
         
-        print(result ?? "ah mince")
+        let ref = Database.database(url: "https://xrai-bb84c-default-rtdb.europe-west1.firebasedatabase.app/").reference().child("results").childByAutoId()
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+
+        
+        ref.setValue(["title": "Pneumonia", "confidence" : confidence, "date": dateFormatter.string(from: Date()), "uid": Auth.auth().currentUser?.uid ?? "2IL8r8fc6rWOyVSgUi3cThFCLQj2"])
+        
+        
+        
     }
     
     func buffer(from image: UIImage) -> CVPixelBuffer? {

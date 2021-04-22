@@ -108,13 +108,12 @@ class DoctorLogin: UIViewController {
             error = true
         }
         else if(postalTf.text == ""){
-            errorMessage = "czn you please enter your postal code"
+            errorMessage = "can you please enter your adress "
             error = true
         }
-
+        
         
         if(error){
-        
             let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                   switch action.style{
@@ -168,7 +167,7 @@ class DoctorLogin: UIViewController {
                     let ref = Database.database(url: "https://xrai-bb84c-default-rtdb.europe-west1.firebasedatabase.app/").reference()
                     let userId = Auth.auth().currentUser?.uid
                     
-                    ref.child("users").child(userId!).setValue(["name": self.nameTf.text!, "phone": self.phoneTf.text!, "mail": self.mailTf.text!, "postalCode" : self.postalTf.text, "userType": "doctor"])
+                    ref.child("users").child(userId!).setValue(["name": self.nameTf.text!, "phone": self.phoneTf.text!, "mail": self.mailTf.text!, "postalCode" : self.postalTf.text!, "userType": "doctor"])
                    
                     self.present(alert, animated: true, completion: nil)
                 }

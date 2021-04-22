@@ -85,5 +85,7 @@
 	</array>
 	<key>privacy</key>
 	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>XRAI needs your location in order to show specialists near you</string>
 </dict>
 </plist>

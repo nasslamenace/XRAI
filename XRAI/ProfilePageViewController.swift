@@ -27,7 +27,7 @@ class ProfilePageViewController: UIViewController, UIImagePickerControllerDelega
         let ref = Database.database(url: "https://xrai-bb84c-default-rtdb.europe-west1.firebasedatabase.app/").reference()
         let userId = Auth.auth().currentUser?.uid
         
-        user = User.init(name: "john doe", email: "johndoe@gmail.com", phone: "+33777494661", pic: "gs://xrai-bb84c.appspot.com/default.jpg", uid: userId!)
+        user = User.init(name: "john doe", email: "johndoe@gmail.com", phone: "+33777494661", pic: "gs://xrai-bb84c.appspot.com/profile_images/default.jpg", uid: userId!)
         
 
         
@@ -38,7 +38,7 @@ class ProfilePageViewController: UIViewController, UIImagePickerControllerDelega
           let username = value?["name"] as? String ?? "john doe"
           let email = value?["mail"] as? String ?? "johndoe@gmail.com"
           let phone = value?["phone"] as? String ?? "+33777494661"
-          let profilePic = value?["profilePic"] as? String ?? "gs://xrai-bb84c.appspot.com/default.jpg"
+          let profilePic = value?["profilePic"] as? String ?? "https://firebasestorage.googleapis.com/v0/b/xrai-bb84c.appspot.com/o/profile_images%2Fdefault.jpg?alt=media&token=d9dce9c0-4dcd-4b65-8d99-53d4e7f99c1d"
         
             self.user = User.init(name: username, email: email, phone: phone, pic: profilePic, uid: userId!)
 
@@ -46,6 +46,7 @@ class ProfilePageViewController: UIViewController, UIImagePickerControllerDelega
             
         
             self.profilePic.loadImageUsingCacheWithUrlString(self.user.profilePic)
+
             
             self.emailLbl.text = self.user.email
             self.nameLbl.text = self.user.name

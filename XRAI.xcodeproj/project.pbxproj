@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C1B12B5A7AF7EE7167A4057 /* Pods_XRAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB98627A20BC899C908F64E /* Pods_XRAI.framework */; };
+		17339C94E2F00C2221C49CF6 /* Pods_XRAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07215D0A85A52E2300238667 /* Pods_XRAI.framework */; };
+		4C0437702631065500F952F9 /* MyScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04376F2631065500F952F9 /* MyScheduleController.swift */; };
+		4C04377526310C6400F952F9 /* RdvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04377426310C6400F952F9 /* RdvCell.swift */; };
+		4C0437C02631162200F952F9 /* RdvPatienCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0437BF2631162200F952F9 /* RdvPatienCell.swift */; };
+		4C0437C52631172C00F952F9 /* MyDoctorScheduleControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0437C42631172C00F952F9 /* MyDoctorScheduleControllerViewController.swift */; };
 		4C1A75DC25C1DEAE0086F526 /* DoctorLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A75DB25C1DEAE0086F526 /* DoctorLogin.swift */; };
 		4C29FD5C258D41BE0035F62A /* XRAIDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C29FD5B258D41BE0035F62A /* XRAIDescription.xib */; };
 		4C29FD61258E55ED0035F62A /* scheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C29FD60258E55EC0035F62A /* scheduleView.xib */; };
@@ -32,7 +36,15 @@
 		4C3A674026207E4B009E1288 /* searchItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C3A673F26207E4B009E1288 /* searchItem.json */; };
 		4C3A67AB26209122009E1288 /* profileItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C3A67AA26209122009E1288 /* profileItem.json */; };
 		4C3A685026209C52009E1288 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A684F26209C52009E1288 /* MyTabView.swift */; };
+		4C49272926308D5300A179E4 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C49272826308D5300A179E4 /* ResultsTableViewController.swift */; };
+		4C611399263093BF0083540E /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C611398263093BF0083540E /* ResultCell.swift */; };
+		4C6114152630CB220083540E /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6114142630CB210083540E /* ScheduleViewController.swift */; };
+		4C6114662630ECD70083540E /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6114652630ECD70083540E /* ProcessViewController.swift */; };
+		4C61146E2630F70B0083540E /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C61146D2630F70B0083540E /* ScheduleCell.swift */; };
 		4C62BB0425BB26BA00EDE2BA /* ConfirmResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C62BB0325BB26BA00EDE2BA /* ConfirmResultController.swift */; };
+		4C7FD8AB26305035003F4EC5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7FD8AA26305035003F4EC5 /* MapViewController.swift */; };
+		4C7FD8B0263050E4003F4EC5 /* CustomPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7FD8AF263050E4003F4EC5 /* CustomPin.swift */; };
+		4C7FD8B526305113003F4EC5 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7FD8B426305113003F4EC5 /* Doctor.swift */; };
 		4C85160B25939C890048A1AC /* swipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C85160A25939C890048A1AC /* swipe.json */; };
 		4C8516132593A29E0048A1AC /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8516122593A29E0048A1AC /* ProfilePageViewController.swift */; };
 		4C8516182593A3860048A1AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8516172593A3860048A1AC /* User.swift */; };
@@ -78,8 +90,7 @@
 		4CEA747425850FFF00F0183C /* Sura-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CEA747125850FFF00F0183C /* Sura-Bold.ttf */; };
 		4CEA747625850FFF00F0183C /* Sura.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CEA747325850FFF00F0183C /* Sura.ttf */; };
 		4CFA836C258FB2BE00E27AA5 /* manageHealth.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CFA836B258FB2BE00E27AA5 /* manageHealth.json */; };
-		B6350DCE9ABC66D51AE77FA2 /* Pods_XRAI_XRAIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2EB0EAE118934B5256E20B /* Pods_XRAI_XRAIUITests.framework */; };
-		E2FF8B153FD171A5D8F79A0C /* Pods_XRAITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1D777C297D011404E19045 /* Pods_XRAITests.framework */; };
+		5E7F77E2D7C1C72C09AEAB0A /* Pods_XRAITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0992265D36BBA3D259E1782A /* Pods_XRAITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +111,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C0F04BEEE6547A4502FED43 /* Pods-XRAITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAITests.debug.xcconfig"; path = "Target Support Files/Pods-XRAITests/Pods-XRAITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3EB4AE16EA30F2B245716512 /* Pods-XRAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAI.release.xcconfig"; path = "Target Support Files/Pods-XRAI/Pods-XRAI.release.xcconfig"; sourceTree = "<group>"; };
+		0618DBE012A4C8759D0AC60A /* Pods-XRAITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAITests.release.xcconfig"; path = "Target Support Files/Pods-XRAITests/Pods-XRAITests.release.xcconfig"; sourceTree = "<group>"; };
+		07215D0A85A52E2300238667 /* Pods_XRAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XRAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0992265D36BBA3D259E1782A /* Pods_XRAITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XRAITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C04376F2631065500F952F9 /* MyScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleController.swift; sourceTree = "<group>"; };
+		4C04377426310C6400F952F9 /* RdvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RdvCell.swift; sourceTree = "<group>"; };
+		4C0437BF2631162200F952F9 /* RdvPatienCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RdvPatienCell.swift; sourceTree = "<group>"; };
+		4C0437C42631172C00F952F9 /* MyDoctorScheduleControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDoctorScheduleControllerViewController.swift; sourceTree = "<group>"; };
 		4C1A75DB25C1DEAE0086F526 /* DoctorLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorLogin.swift; sourceTree = "<group>"; };
 		4C29FD5B258D41BE0035F62A /* XRAIDescription.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XRAIDescription.xib; sourceTree = "<group>"; };
 		4C29FD60258E55EC0035F62A /* scheduleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = scheduleView.xib; sourceTree = "<group>"; };
@@ -126,7 +142,16 @@
 		4C3A673F26207E4B009E1288 /* searchItem.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchItem.json; sourceTree = "<group>"; };
 		4C3A67AA26209122009E1288 /* profileItem.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profileItem.json; sourceTree = "<group>"; };
 		4C3A684F26209C52009E1288 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		4C49272826308D5300A179E4 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		4C611398263093BF0083540E /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		4C6114142630CB210083540E /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		4C6114612630DC5B0083540E /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
+		4C6114652630ECD70083540E /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
+		4C61146D2630F70B0083540E /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		4C62BB0325BB26BA00EDE2BA /* ConfirmResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmResultController.swift; sourceTree = "<group>"; };
+		4C7FD8AA26305035003F4EC5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4C7FD8AF263050E4003F4EC5 /* CustomPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPin.swift; sourceTree = "<group>"; };
+		4C7FD8B426305113003F4EC5 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		4C85160A25939C890048A1AC /* swipe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = swipe.json; sourceTree = "<group>"; };
 		4C8516122593A29E0048A1AC /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
 		4C8516172593A3860048A1AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -178,13 +203,9 @@
 		4CEA747125850FFF00F0183C /* Sura-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sura-Bold.ttf"; sourceTree = "<group>"; };
 		4CEA747325850FFF00F0183C /* Sura.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sura.ttf; sourceTree = "<group>"; };
 		4CFA836B258FB2BE00E27AA5 /* manageHealth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manageHealth.json; sourceTree = "<group>"; };
-		6CB98627A20BC899C908F64E /* Pods_XRAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XRAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EBBFB48B1532DCA8403AF7F /* Pods-XRAI-XRAIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAI-XRAIUITests.release.xcconfig"; path = "Target Support Files/Pods-XRAI-XRAIUITests/Pods-XRAI-XRAIUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D73ECEBD3689D2EAB28636CA /* Pods-XRAI-XRAIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAI-XRAIUITests.debug.xcconfig"; path = "Target Support Files/Pods-XRAI-XRAIUITests/Pods-XRAI-XRAIUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB2EB0EAE118934B5256E20B /* Pods_XRAI_XRAIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XRAI_XRAIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC1D777C297D011404E19045 /* Pods_XRAITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XRAITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6E7CF0E602A5A236084A55F /* Pods-XRAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAI.debug.xcconfig"; path = "Target Support Files/Pods-XRAI/Pods-XRAI.debug.xcconfig"; sourceTree = "<group>"; };
-		E944F246A23758E42C57B26E /* Pods-XRAITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAITests.release.xcconfig"; path = "Target Support Files/Pods-XRAITests/Pods-XRAITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D2AA67E68024101442A574B /* Pods-XRAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAI.debug.xcconfig"; path = "Target Support Files/Pods-XRAI/Pods-XRAI.debug.xcconfig"; sourceTree = "<group>"; };
+		962A13230A218CF8A01430D1 /* Pods-XRAITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAITests.debug.xcconfig"; path = "Target Support Files/Pods-XRAITests/Pods-XRAITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBA097C6145A9B12D29702C6 /* Pods-XRAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XRAI.release.xcconfig"; path = "Target Support Files/Pods-XRAI/Pods-XRAI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C1B12B5A7AF7EE7167A4057 /* Pods_XRAI.framework in Frameworks */,
+				17339C94E2F00C2221C49CF6 /* Pods_XRAI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2FF8B153FD171A5D8F79A0C /* Pods_XRAITests.framework in Frameworks */,
+				5E7F77E2D7C1C72C09AEAB0A /* Pods_XRAITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +229,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6350DCE9ABC66D51AE77FA2 /* Pods_XRAI_XRAIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +252,7 @@
 				4C8A57E625828691001948A6 /* XRAIUITests */,
 				4C8A57C32582868D001948A6 /* Products */,
 				C1FCD2455AAC78E53AA6F262 /* Pods */,
-				9A52A8CB662A408B39ACE40D /* Frameworks */,
+				9C5CA6B400440E81F66E31DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,10 +276,12 @@
 				4C62BB0325BB26BA00EDE2BA /* ConfirmResultController.swift */,
 				4C29FD74258E5B7E0035F62A /* CovidMsgUIView.swift */,
 				4C2C0B0E258D3ABC0033F2A2 /* covidMsgView.xib */,
+				4C7FD8AF263050E4003F4EC5 /* CustomPin.swift */,
 				4C2C5F3A2598F3090030173C /* CVPixelBufferExtension.swift */,
 				4C29FD8B258E6B2A0035F62A /* DataViewController.swift */,
 				4C29FD7C258E5B9B0035F62A /* DescriptionUIView.swift */,
 				4C29FD95258E80260035F62A /* doctor.json */,
+				4C7FD8B426305113003F4EC5 /* Doctor.swift */,
 				4C1A75DB25C1DEAE0086F526 /* DoctorLogin.swift */,
 				4C9D1572259BBC09003D28D3 /* focus.json */,
 				4CEA73F42584EBD600F0183C /* GoogleService-Info.plist */,
@@ -268,22 +290,35 @@
 				4C8A57D325828691001948A6 /* Info.plist */,
 				4C8A57D025828691001948A6 /* LaunchScreen.storyboard */,
 				4C8A57CB2582868D001948A6 /* Main.storyboard */,
-				4C3A673426207C33009E1288 /* scanItem.json */,
-				4C3A67AA26209122009E1288 /* profileItem.json */,
-				4C3A6724261F3F4B009E1288 /* notificationItem.json */,
+				4C0437C42631172C00F952F9 /* MyDoctorScheduleControllerViewController.swift */,
+				4C0437BF2631162200F952F9 /* RdvPatienCell.swift */,
+				4C04377426310C6400F952F9 /* RdvCell.swift */,
+				4C04376F2631065500F952F9 /* MyScheduleController.swift */,
 				4CFA836B258FB2BE00E27AA5 /* manageHealth.json */,
-				4C3A673F26207E4B009E1288 /* searchItem.json */,
 				4C29FD86258E5BD50035F62A /* ManageHealthUIView.swift */,
 				4C29FD65258E573E0035F62A /* ManageHealthView.xib */,
+				4C7FD8AA26305035003F4EC5 /* MapViewController.swift */,
+				4C61146D2630F70B0083540E /* ScheduleCell.swift */,
 				4C2C5F342598F2080030173C /* Model */,
 				4CA72DD425BF0F1200D26DA6 /* model.tflite */,
+				4C6114612630DC5B0083540E /* model.tflite */,
 				4C2C5F3F2598F4850030173C /* ModelDataHandler.swift */,
+				4C3A671F261F39ED009E1288 /* MyTabBarController.swift */,
+				4C3A684F26209C52009E1288 /* MyTabView.swift */,
+				4C3A6724261F3F4B009E1288 /* notificationItem.json */,
 				4C29FD90258E6BB30035F62A /* PageViewController.swift */,
+				4C6114652630ECD70083540E /* ProcessViewController.swift */,
+				4C3A67AA26209122009E1288 /* profileItem.json */,
 				4C8516122593A29E0048A1AC /* ProfilePageViewController.swift */,
+				4C611398263093BF0083540E /* ResultCell.swift */,
+				4C49272826308D5300A179E4 /* ResultsTableViewController.swift */,
+				4C3A673426207C33009E1288 /* scanItem.json */,
 				4C8A57C72582868D001948A6 /* SceneDelegate.swift */,
 				4C29FD9A258E839B0035F62A /* schedule.json */,
 				4C29FD81258E5BC40035F62A /* ScheduleInfoUIView.swift */,
 				4C29FD60258E55EC0035F62A /* scheduleView.xib */,
+				4C6114142630CB210083540E /* ScheduleViewController.swift */,
+				4C3A673F26207E4B009E1288 /* searchItem.json */,
 				4CA776BA258A97D8000889B2 /* SignUpViewController.swift */,
 				4C85160A25939C890048A1AC /* swipe.json */,
 				4C9D1585259BC6F2003D28D3 /* torch.json */,
@@ -294,8 +329,6 @@
 				4C29FD6F258E5AFF0035F62A /* welcomeUIView.swift */,
 				4C2C0B09258D3A680033F2A2 /* welcomeView.xib */,
 				4C29FD5B258D41BE0035F62A /* XRAIDescription.xib */,
-				4C3A671F261F39ED009E1288 /* MyTabBarController.swift */,
-				4C3A684F26209C52009E1288 /* MyTabView.swift */,
 			);
 			path = XRAI;
 			sourceTree = "<group>";
@@ -371,12 +404,11 @@
 			path = Sura;
 			sourceTree = "<group>";
 		};
-		9A52A8CB662A408B39ACE40D /* Frameworks */ = {
+		9C5CA6B400440E81F66E31DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6CB98627A20BC899C908F64E /* Pods_XRAI.framework */,
-				DB2EB0EAE118934B5256E20B /* Pods_XRAI_XRAIUITests.framework */,
-				DC1D777C297D011404E19045 /* Pods_XRAITests.framework */,
+				07215D0A85A52E2300238667 /* Pods_XRAI.framework */,
+				0992265D36BBA3D259E1782A /* Pods_XRAITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -384,12 +416,10 @@
 		C1FCD2455AAC78E53AA6F262 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E6E7CF0E602A5A236084A55F /* Pods-XRAI.debug.xcconfig */,
-				3EB4AE16EA30F2B245716512 /* Pods-XRAI.release.xcconfig */,
-				D73ECEBD3689D2EAB28636CA /* Pods-XRAI-XRAIUITests.debug.xcconfig */,
-				9EBBFB48B1532DCA8403AF7F /* Pods-XRAI-XRAIUITests.release.xcconfig */,
-				1C0F04BEEE6547A4502FED43 /* Pods-XRAITests.debug.xcconfig */,
-				E944F246A23758E42C57B26E /* Pods-XRAITests.release.xcconfig */,
+				6D2AA67E68024101442A574B /* Pods-XRAI.debug.xcconfig */,
+				CBA097C6145A9B12D29702C6 /* Pods-XRAI.release.xcconfig */,
+				962A13230A218CF8A01430D1 /* Pods-XRAITests.debug.xcconfig */,
+				0618DBE012A4C8759D0AC60A /* Pods-XRAITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -401,12 +431,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8A57EC25828691001948A6 /* Build configuration list for PBXNativeTarget "XRAI" */;
 			buildPhases = (
-				7AAEBDAEF35F2D58F86EA817 /* [CP] Check Pods Manifest.lock */,
+				0B9E0A8AD22DDF572195EC51 /* [CP] Check Pods Manifest.lock */,
 				4C8A57BE2582868D001948A6 /* Sources */,
 				4C8A57BF2582868D001948A6 /* Frameworks */,
 				4C8A57C02582868D001948A6 /* Resources */,
-				9CA7862BB05C62B5219E0C93 /* [CP] Embed Pods Frameworks */,
-				55ED0E4EEBE60B7CE01C595F /* [CP] Copy Pods Resources */,
+				F9508CCDEC4C834710969B8B /* [CP] Embed Pods Frameworks */,
+				8F716F21296A47F72659714E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,7 +451,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8A57EF25828691001948A6 /* Build configuration list for PBXNativeTarget "XRAITests" */;
 			buildPhases = (
-				B2E5DD55D0070FC0FBDD95C6 /* [CP] Check Pods Manifest.lock */,
+				ADDFFCFD33FE1F6EE29D4700 /* [CP] Check Pods Manifest.lock */,
 				4C8A57D425828691001948A6 /* Sources */,
 				4C8A57D525828691001948A6 /* Frameworks */,
 				4C8A57D625828691001948A6 /* Resources */,
@@ -440,12 +470,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8A57F225828691001948A6 /* Build configuration list for PBXNativeTarget "XRAIUITests" */;
 			buildPhases = (
-				B1AFA93EADA5A7039C3205D9 /* [CP] Check Pods Manifest.lock */,
 				4C8A57DF25828691001948A6 /* Sources */,
 				4C8A57E025828691001948A6 /* Frameworks */,
 				4C8A57E125828691001948A6 /* Resources */,
-				4A933900F648CD6390D8D786 /* [CP] Embed Pods Frameworks */,
-				44A0C415B7DD2A63C48706DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -569,58 +596,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44A0C415B7DD2A63C48706DB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XRAI-XRAIUITests/Pods-XRAI-XRAIUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XRAI-XRAIUITests/Pods-XRAI-XRAIUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XRAI-XRAIUITests/Pods-XRAI-XRAIUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A933900F648CD6390D8D786 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XRAI-XRAIUITests/Pods-XRAI-XRAIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XRAI-XRAIUITests/Pods-XRAI-XRAIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XRAI-XRAIUITests/Pods-XRAI-XRAIUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		55ED0E4EEBE60B7CE01C595F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7AAEBDAEF35F2D58F86EA817 /* [CP] Check Pods Manifest.lock */ = {
+		0B9E0A8AD22DDF572195EC51 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -642,46 +618,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CA7862BB05C62B5219E0C93 /* [CP] Embed Pods Frameworks */ = {
+		8F716F21296A47F72659714E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1AFA93EADA5A7039C3205D9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-XRAI-XRAIUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2E5DD55D0070FC0FBDD95C6 /* [CP] Check Pods Manifest.lock */ = {
+		ADDFFCFD33FE1F6EE29D4700 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -703,6 +657,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F9508CCDEC4C834710969B8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XRAI/Pods-XRAI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -711,18 +682,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8A57CA2582868D001948A6 /* ViewController.swift in Sources */,
+				4C04377526310C6400F952F9 /* RdvCell.swift in Sources */,
 				4C8A57C62582868D001948A6 /* AppDelegate.swift in Sources */,
 				4C3A6720261F39EE009E1288 /* MyTabBarController.swift in Sources */,
+				4C0437C52631172C00F952F9 /* MyDoctorScheduleControllerViewController.swift in Sources */,
 				4C29FD70258E5AFF0035F62A /* welcomeUIView.swift in Sources */,
 				4C3A685026209C52009E1288 /* MyTabView.swift in Sources */,
+				4C6114152630CB220083540E /* ScheduleViewController.swift in Sources */,
 				4CEA7441258509C100F0183C /* gradientView.swift in Sources */,
+				4C611399263093BF0083540E /* ResultCell.swift in Sources */,
 				4C29FD8C258E6B2A0035F62A /* DataViewController.swift in Sources */,
+				4C7FD8AB26305035003F4EC5 /* MapViewController.swift in Sources */,
 				4C8516132593A29E0048A1AC /* ProfilePageViewController.swift in Sources */,
 				4C29FD7D258E5B9B0035F62A /* DescriptionUIView.swift in Sources */,
+				4C0437702631065500F952F9 /* MyScheduleController.swift in Sources */,
 				4C29FD75258E5B7E0035F62A /* CovidMsgUIView.swift in Sources */,
 				4C2C5F402598F4850030173C /* ModelDataHandler.swift in Sources */,
+				4C7FD8B526305113003F4EC5 /* Doctor.swift in Sources */,
 				4C8516182593A3860048A1AC /* User.swift in Sources */,
 				4C8A57C82582868D001948A6 /* SceneDelegate.swift in Sources */,
+				4C49272926308D5300A179E4 /* ResultsTableViewController.swift in Sources */,
 				4C29FD87258E5BD50035F62A /* ManageHealthUIView.swift in Sources */,
 				4CA776BB258A97D8000889B2 /* SignUpViewController.swift in Sources */,
 				4C9D1569259BA67F003D28D3 /* ViewControllerExtension.swift in Sources */,
@@ -731,8 +710,12 @@
 				4C8516462593BE0D0048A1AC /* CameraViewController.swift in Sources */,
 				4C62BB0425BB26BA00EDE2BA /* ConfirmResultController.swift in Sources */,
 				4CA776C9258AAAAC000889B2 /* HomeViewController.swift in Sources */,
+				4C61146E2630F70B0083540E /* ScheduleCell.swift in Sources */,
+				4C0437C02631162200F952F9 /* RdvPatienCell.swift in Sources */,
+				4C6114662630ECD70083540E /* ProcessViewController.swift in Sources */,
 				4C1A75DC25C1DEAE0086F526 /* DoctorLogin.swift in Sources */,
 				4C29FD82258E5BC40035F62A /* ScheduleInfoUIView.swift in Sources */,
+				4C7FD8B0263050E4003F4EC5 /* CustomPin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -913,7 +896,7 @@
 		};
 		4C8A57ED25828691001948A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6E7CF0E602A5A236084A55F /* Pods-XRAI.debug.xcconfig */;
+			baseConfigurationReference = 6D2AA67E68024101442A574B /* Pods-XRAI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -933,7 +916,7 @@
 		};
 		4C8A57EE25828691001948A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EB4AE16EA30F2B245716512 /* Pods-XRAI.release.xcconfig */;
+			baseConfigurationReference = CBA097C6145A9B12D29702C6 /* Pods-XRAI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -953,7 +936,7 @@
 		};
 		4C8A57F025828691001948A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C0F04BEEE6547A4502FED43 /* Pods-XRAITests.debug.xcconfig */;
+			baseConfigurationReference = 962A13230A218CF8A01430D1 /* Pods-XRAITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -976,7 +959,7 @@
 		};
 		4C8A57F125828691001948A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E944F246A23758E42C57B26E /* Pods-XRAITests.release.xcconfig */;
+			baseConfigurationReference = 0618DBE012A4C8759D0AC60A /* Pods-XRAITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -999,7 +982,6 @@
 		};
 		4C8A57F325828691001948A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D73ECEBD3689D2EAB28636CA /* Pods-XRAI-XRAIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1020,7 +1002,6 @@
 		};
 		4C8A57F425828691001948A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EBBFB48B1532DCA8403AF7F /* Pods-XRAI-XRAIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

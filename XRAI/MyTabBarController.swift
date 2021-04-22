@@ -16,8 +16,8 @@ class MyTabBarController: UITabBarController {
     var animMessage = AnimationView()
     var animContribuer = AnimationView()
     var animProfile = AnimationView()
-    
     var barView = UIView()
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

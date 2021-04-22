@@ -80,7 +80,7 @@ class ViewController: UIViewController {
                 let userId = Auth.auth().currentUser?.uid
                 ref.child("users").child(userId!).observeSingleEvent(of: .value, with: { (snapshot) in
                     
-                    
+                    print(snapshot.value)
                   let value = snapshot.value as? NSDictionary
                   let userType = value?["userType"] as? String ?? "user"
                     
